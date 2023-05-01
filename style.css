@@ -1,0 +1,274 @@
+*{
+    Margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: #E5E5E5;
+    box-sizing: border-box;
+}
+
+
+.contenedor{
+    width: 1440px;
+    height: 1024px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+}
+
+.derecha{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.logo{
+    width: 31.9px;
+    height: 48px;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.texto{
+    width: 577px;
+    height: 560px;
+    margin-top: 40px;
+    margin-left: 240px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #0A3871;
+}
+
+.texto::placeholder{
+    color: #0A3871;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+.fa-solid{
+    color: black;
+}
+
+.mensaje{
+    margin-left: 240px;
+    margin-top: 168px;
+    width: 225px;
+    height: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;  
+    color: #495057;
+
+}
+
+.botones{
+    margin-left: 240px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+   
+       
+}
+
+#boton1, #boton2, #boton3{
+    width: 328px;
+    height: 67px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 24px;
+    border: solid 2px #0A3871; 
+    cursor: pointer;
+    transition: .5s;
+    
+}
+
+#boton1{
+    color: white;
+    background-color: #0A3871;
+    line-height: 19px;
+}
+
+#boton2{
+    color: #0A3871;
+    background-color: #D8DFE8;
+    line-height: 19.36px;
+}
+
+#boton3{
+    color: #0A3871;
+    background-color: #D8DFE8;
+    line-height: 19.36px;
+    margin-top: 32px;
+    margin-left: 32px;
+    display: none; 
+}
+
+#boton1:hover{
+    scale: 1.1;
+}
+
+#boton2:hover{
+    scale: 1.1;
+}
+
+#boton3:hover{
+    scale: 1.1;
+}
+
+.izquierda{
+    background-color: white;
+    border-radius:  25px;
+    margin-top: 40px;
+    width: 400px;
+    height: 944px; 
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.8);
+
+}
+
+#doll{
+    background: white;
+    margin-top: 243px;
+    margin-left: 32px;
+}
+
+.sinmensaje{
+    margin-left: 32px;
+    margin-top: 32px;
+    width: 336px;
+    padding: 0;
+    background: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.ingresa{
+    margin-left: 32px;
+    margin-top: 16px;
+    width: 336px;
+    padding: 0;
+    background: white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #495057; 
+}
+
+#textodesencriptado{
+    background-color: white;
+    margin-top: 32px;
+    margin-left: 32px;
+    width: 336px;
+    height: 781px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #495057;
+    border: none;
+    outline: none;
+    resize: none;
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+    *{
+        background-color: #E5E5E5;
+    }
+
+    
+    .contenedor{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .derecha{
+        width: 90%;
+    }
+    
+    .logo{
+        position: absolute;
+        height: 73.42px;
+        margin-left: 5%;
+    }
+
+    .texto{
+        width: auto;
+        height: auto;
+        margin-top: 50%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .mensaje{
+        margin-left: 40px;
+        width: auto;
+        height: 18px;
+        font-size: 16px;
+        color: #495057;
+    }
+
+    .botones{
+        margin-left: 10%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+
+    #boton1, #boton2{
+        width: 46%;
+    }
+
+    #doll{
+        display: none;
+    }
+
+    .izquierda{
+        height: auto; 
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+    }
+    
+
+    .sinmensaje{
+        padding: 1em;
+        margin: auto;
+        width: 80%;
+    }
+    .ingresa{
+        padding: 1em;
+        margin: auto;
+        width: 80%;       
+    }
+
+    #textodesencriptado{
+        margin: auto;
+        width: 85%;
+        height: 100vw;
+    }
+
+    #boton3{
+        margin: auto;
+        width: 85%;
+        margin-bottom: 30px;
+        font-size: 16px;
+        justify-content: center;
+    }
+
+    #boton3:hover{
+        scale: 1.1;
+    }
+}

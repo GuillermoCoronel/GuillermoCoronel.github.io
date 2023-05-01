@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="es">
+//solo para probar el GitPages
+    <head>        
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Alura Challenge One</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9367f8726c.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="script.js"></script>
+         
+    </head>
+        
+<body>
+    <main>
+    <section class="contenedor">
+        <div class="derecha">
+            
+                <img class="logo" src="images/Logo2.png" alt="LogoAlura">
+            
+            
+                <textarea class="texto" name="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            
+            
+                <p class="mensaje"><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>
+                
+            
+            <div class="botones">
+                <button type="button" id="boton1" onclick="encriptar()">Encriptar</button>
+                <button type="button" id="boton2" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+    
+    <div class="izquierda">
+        <img id="doll" src="images/Muñeco.png" alt="muñeco">
+        <h2 id="sinmensaje" class="sinmensaje">Ningún mensaje fue encontrado</h2>
+        <p id="ingresa" class="ingresa">Ingresa el texto que desees encriptar o desencriptar.</p>
+        <textarea id="textodesencriptado" clase="textodesencriptado" name="textodesencriptado"></textarea>
+        <input id="boton3" class="boton3" type="button" onclick="copiar()" value="Copiar">
+    </div>
+    </section>
+    </main>
+
+</body>
+</html>
