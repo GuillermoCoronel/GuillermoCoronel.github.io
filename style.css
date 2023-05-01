@@ -182,6 +182,17 @@
     display: none;
 }
 
+.footer{
+    font-size: 14px;
+    font-weight: 700;
+    font-style: bold;
+    color: black;
+    margin: auto;
+    text-align: center;
+    background: none;
+    padding-top: 1em;
+
+}
 @media screen and (max-width:900px) {
     *{
         background-color: #E5E5E5;
@@ -207,7 +218,7 @@
     .texto{
         width: auto;
         height: auto;
-        margin-top: 50%;
+        margin-top: 30%;
         margin-left: 5%;
         margin-right: 5%;
     }
