@@ -1,0 +1,43 @@
+.about {
+    background: #EAF2FD;   
+}
+
+.about__container {
+    margin: 0 0 3rem 0;
+    max-width: 1136px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about__title {
+    font-family: Raleway;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #464646;
+    margin: 3rem 0;
+}
+
+.about__paragraph {
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 100;
+    color: #464646;
+}
+
+.firma {
+    width: 350px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .about__container {
+        max-width: 704px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .about__container {
+        max-width: 328px;
+    }
+}

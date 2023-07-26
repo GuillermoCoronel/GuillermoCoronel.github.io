@@ -1,0 +1,151 @@
+.formcontato {
+    
+    background: #EAF2FD;
+    padding: 6rem 0;
+
+}
+
+.formcontato--esquerda {
+    padding-right: 1rem;
+}
+
+.formcontato__contacto {
+    display: flex;
+
+}
+
+.formcontato__title {
+    font-family: Raleway;
+    color: #464646;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 1.2rem;
+}
+
+.formcontato__subtext {
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1rem; 
+    color: #464646;
+}
+
+/*reposo*/
+.contacto {
+    background: #fff;
+    margin: 1.4rem 0;
+}
+
+.falso_placeholder {
+    display:block;
+    width: 100%;
+    border: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.falso_placeholder input, textarea{
+    display: block;
+    height: 2rem;
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1.4rem;
+
+    font-family: Raleway;
+    transition: .3s; 
+}
+
+.falso_placeholder span {
+    color: silver;
+    position: absolute;
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    line-height: 1rem;
+    left: 1rem;
+    font-family: Raleway;
+    transition: .3s;
+}
+
+
+.formcontato__textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    height: 5rem;
+}   
+
+.formcontato__botao {
+    padding: 1rem 1rem;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 400;
+    background: #2A7AE4;
+    color: #FFF;
+    border-style: solid;
+    border-color: #2A7AE4;
+}
+
+/*focus*/
+
+
+.falso_placeholder.focus {
+    border-bottom: 3px solid #2A7AE4;
+    
+}
+
+/*top*/
+
+.falso_placeholder span.top {
+    left: 2px;
+    top: 4px;
+    font-size: .90rem;
+    padding: 0 10px;
+    color: #2A7AE4;
+    
+}
+
+/*error*/
+
+span.error {
+    font-family: Raleway;
+    color: red;
+    font-size: 1rem;
+   
+    padding: 0;
+}
+  
+
+@media screen and (max-width: 1024px) {
+    .formcontato__img {
+        display: none
+    }
+
+    .formcontato__contacto {
+        display: block;
+    }
+
+    .formcontato {
+        min-width: 751px;  
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .formcontato__img {
+        display: none
+    }
+
+    .formcontato {
+        min-width: 328px;  
+    }
+
+    .formcontato {
+        max-width: 328px;  
+    }
+}
+

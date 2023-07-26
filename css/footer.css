@@ -1,0 +1,15 @@
+.footer__rodape {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #464646;
+}
+
+.footer__rodape p{
+    margin: 0.3rem;
+    padding: 0;
+}

@@ -1,0 +1,127 @@
+.experience {
+    min-width: 1136px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.experience__section__title {
+    font-family: Raleway;
+    color: #464646;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 3rem 0rem;
+}
+
+.experiencie__box {
+    min-width: 1136px;
+    display: flex;
+    align-items: start;
+    margin: 3rem 0;
+}
+
+.experience__title {
+    font-family: Raleway;
+    color: #464646;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: .5rem 0rem;
+}
+
+.experience__text {
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #464646;
+    margin-bottom: .5rem;
+}
+
+.experience__info {
+    display: flex;
+    flex-direction: column;
+    padding: 8rem 1rem;
+}
+
+.experiencie__box--reverse {
+    max-width: 1136px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 3rem 0;
+}
+
+.experiencia__botao--repo {
+    padding: 1rem 1rem;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #2A7AE4;
+    border-style: solid;
+    border-color: #2A7AE4;
+}
+
+.experience__botao--demo {
+    padding: 1rem 1rem;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 400;
+    background: #2A7AE4;
+    color: #FFF;
+    border-style: solid;
+    border-color: #2A7AE4;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .experience {
+        min-width: 704px;        
+    }
+
+    .experiencie__box {
+        min-width: 704px;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .experience__info {
+        padding: 1rem 0rem;
+    }
+
+    .experience__title {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .experiencie__box--reverse {
+        min-width: 704px;
+        flex-direction: column;
+        justify-content: left;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .experience {
+        max-width: 328px;
+    }
+
+    .experience__img {
+        width: 296px;
+    }
+
+    .experiencie__box--reverse {
+        min-width: 328px;
+        max-width: 328px;
+        flex-direction: column;
+        justify-content: left;
+        margin: 0;
+    }
+    
+    .experiencie__box {
+        min-width: 328px;
+        max-width: 328px;
+        flex-direction: column;
+        justify-content: left;
+        margin: 0;
+    }    
+
+}

@@ -1,285 +1,132 @@
-*{
-    Margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-    background: #E5E5E5;
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body {
     box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
 }
 
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
 
-.contenedor{
-    width: 1440px;
-    height: 1024px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+section.menu{
+
+}
+
+/*Sección Title*/
+
+section.title{
+
+}
+
+/*Sección About*/
+
+section.about{
+
+}
+
+/*Sección Hobbies*/
+
+section.hobbies{
     
 }
 
-.derecha{
-    display: flex;
-    flex-direction: column;
-    
-}
+/* Experiencia Académica*/
 
-.logo{
-    width: 31.9px;
-    height: 48px;
-    margin-left: 100px;
-    margin-top: 40px;
-}
-
-.texto{
-    width: 577px;
-    height: 560px;
-    margin-top: 40px;
-    margin-left: 240px;
-    border: none;
-    outline: none;
-    resize: none;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 48px;
-    color: #0A3871;
-}
-
-.texto::placeholder{
-    color: #0A3871;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 48px;
-}
-
-.fa-solid{
-    color: black;
-}
-
-.mensaje{
-    margin-left: 240px;
-    margin-top: 168px;
-    width: 225px;
-    height: 18px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;  
-    color: #495057;
+section.academic{
 
 }
 
-.botones{
-    margin-left: 240px;
-    margin-top: 16px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 24px;
+/* experiencia*/
+
+section.experience{
+
+}
+
+/*Contacto*/
+
+section.formcontato{
+
+}
+
+/*footeer*/
+
+section.footer{
    
-       
 }
 
-#boton1, #boton2, #boton3{
-    width: 328px;
-    height: 67px;
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-    border-radius: 24px;
-    border: solid 2px #0A3871; 
-    cursor: pointer;
-    transition: .5s;
-    
-}
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
 
-#boton1{
-    color: white;
-    background-color: #0A3871;
-    line-height: 19px;
-}
 
-#boton2{
-    color: #0A3871;
-    background-color: #D8DFE8;
-    line-height: 19.36px;
-}
+/*Tablet*/
+@media (min-width: 768px) {
 
-#boton3{
-    color: #0A3871;
-    background-color: #D8DFE8;
-    line-height: 19.36px;
-    margin-top: 32px;
-    margin-left: 32px;
-    display: none; 
-}
+/* Menú */
 
-#boton1:hover{
-    scale: 1.1;
-}
+/*title*/
 
-#boton2:hover{
-    scale: 1.1;
-}
+/*Skills*/
 
-#boton3:hover{
-    scale: 1.1;
-}
+/*Hobbies*/
 
-.izquierda{
-    background-color: white;
-    border-radius:  25px;
-    margin-top: 40px;
-    width: 400px;
-    height: 944px; 
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.8);
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
 
 }
 
-#doll{
-    background: white;
-    margin-top: 243px;
-    margin-left: 32px;
-}
+/*Mobile*/
+@media (min-width: 425px) {
 
-.sinmensaje{
-    margin-left: 32px;
-    margin-top: 32px;
-    width: 336px;
-    padding: 0;
-    background: white;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 120%;
-    text-align: center;
-}
+/*Menu*/
 
-.ingresa{
-    margin-left: 32px;
-    margin-top: 16px;
-    width: 336px;
-    padding: 0;
-    background: white;
-    text-align: center;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #495057; 
-}
+/*Titulo*/
 
-#textodesencriptado{
-    background-color: white;
-    margin-top: 32px;
-    margin-left: 32px;
-    width: 336px;
-    height: 781px;
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 400;
-    color: #495057;
-    border: none;
-    outline: none;
-    resize: none;
-    display: none;
-}
+/*Sección sobre mi*/
 
-.footer{
-    font-size: 14px;
-    font-weight: 700;
-    font-style: bold;
-    color: black;
-    margin: auto;
-    text-align: center;
-    background: none;
-    padding-top: 1em;
+/*Skills*/
 
-}
-@media screen and (max-width:900px) {
-    *{
-        background-color: #E5E5E5;
-    }
+/*Hobbies*/
+ 
+/*Formación Académica*/
 
-    
-    .contenedor{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
+/*Experiencia Profesional*/
 
-    .derecha{
-        width: 90%;
-    }
-    
-    .logo{
-        position: absolute;
-        height: 73.42px;
-        margin-left: 5%;
-    }
+ /*Contacto*/
 
-    .texto{
-        width: auto;
-        height: auto;
-        margin-top: 30%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+/*Footer*/
 
-    .mensaje{
-        margin-left: 40px;
-        width: auto;
-        height: 18px;
-        font-size: 16px;
-        color: #495057;
-    }
-
-    .botones{
-        margin-left: 10%;
-        margin-right: 5%;
-        margin-bottom: 5%;
-    }
-
-    #boton1, #boton2{
-        width: 46%;
-    }
-
-    #doll{
-        display: none;
-    }
-
-    .izquierda{
-        height: auto; 
-        display: flex;
-        flex-wrap: wrap;
-        width: 90%;
-        margin: auto;
-    }
-    
-
-    .sinmensaje{
-        padding: 1em;
-        margin: auto;
-        width: 80%;
-    }
-    .ingresa{
-        padding: 1em;
-        margin: auto;
-        width: 80%;       
-    }
-
-    #textodesencriptado{
-        margin: auto;
-        width: 85%;
-        height: 100vw;
-    }
-
-    #boton3{
-        margin: auto;
-        width: 85%;
-        margin-bottom: 30px;
-        font-size: 16px;
-        justify-content: center;
-    }
-
-    #boton3:hover{
-        scale: 1.1;
-    }
 }
